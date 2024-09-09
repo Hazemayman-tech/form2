@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .password ::placeholder{
+            margin-left: 50px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bolder;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+          font-size: 16px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff4b4b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .login-container button:hover {
+            background-color: #e64343;
+        }
+        .login-container a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .bottom-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>تسجيل الدخول للوصول إلى حسابك</h2>
+        <form action="#">
+            <input type="email" placeholder="عنوان البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <button type="submit">إنشاء حساب</button>
+            <p>من خلال الاستمرار، فإنك توافق على شروط الاستخدام وسياسة الخصوصية</p>
+            <div class="bottom-section">
+                <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                <input type="password" placeholder="كلمة المرور" required>
+                <a href="#">___________هل نسيت كلمة السر؟____________</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
